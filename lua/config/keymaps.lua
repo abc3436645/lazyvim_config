@@ -22,3 +22,6 @@ vim.keymap.set(
   ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
   { desc = "live grep with args" }
 )
+
+-- mini-files
+vim.keymap.set("n", "<Tab>", require("mini.files").open)
