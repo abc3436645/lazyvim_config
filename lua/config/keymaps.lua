@@ -25,3 +25,6 @@ vim.keymap.set(
 
 -- mini-files
 vim.keymap.set("n", "<Tab>", require("mini.files").open)
+
+--undotree
+vim.keymap.set("n", "<leader><F6>", vim.cmd.UndotreeToggle, { desc = "Toggle Undotree" })
